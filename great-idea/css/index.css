@@ -3,64 +3,269 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid red 2px;
+    padding: 2%;
+    flex-direction: row;
+}
+
+
+/*nav a {
+
+}*/
+
+.Nav2 {
+    display: flex;
+    align-items: center;
+    border: solid 2px;
+}
+
+
+/*.NavItem {
+    
+}*/
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    border: solid green 2px;
+}
+
+.items {
+    border: solid 2px;
+    display: flex;
+    justify-content: space-;
+}
+
+.items1 {
+    border: solid blue 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture {
+    display: flex;
+}
+
+.adjust {
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#same {
+    vertical-align: none;
+    margin-left: 20px;
+    padding: 0 0 0 15px;
+}
+
+.container2 {
+    border: solid red 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prepic-title {
+    display: flex;
+    align-items: column;
+}
+
+
+/*.prepic-title2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    margin: 5%;
+}
+
+.mid-pic {
+    width: 100%;
+}
+
+.postpic-title {
+    text-align: left;
+    width: 31%;
+    vertical-align: middle;
+    margin-top: 2%;
+}
+
+.bottom {
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 8px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.box1 {
+    display: flex;
+}
